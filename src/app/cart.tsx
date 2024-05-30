@@ -78,9 +78,9 @@ export default function Cart(){
                         {cartStore.products.length > 0 ? (
                             <View className="border-b border-slate-700">
                                 {cartStore.products.map((product) => (
-                                    <Product 
-                                        key={product.id} 
-                                        data={product} 
+                                    <Product
+                                        key={product.id}
+                                        data={product}
                                         onPress={() => handleProductRemove(product)}
                                     />
                                 ))}
